@@ -14,13 +14,13 @@ public class WebPageTest
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get("https://toxic2026.github.io/Mysimplewebsite/");
+        driver.get("https://toxic2026.github.io/demo11/");
     }
     @Test
     public void titleValidationTest()
     {
         String actualTitle = driver.getTitle();
-        String expectedTitle = "Mysimplewebsite";
+        String expectedTitle = "My simple website";
         Assert.assertEquals(actualTitle, expectedTitle);
         assertTrue(true, "Title should contain 'simple'");
     }
